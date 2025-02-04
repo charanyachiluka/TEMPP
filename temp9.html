@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function f1(e)
+     {
+        let u=document.getElementById("un").value;
+        let p=document.getElementById("ps").value;
+        if(u == " " || p == " ")
+        {
+          msg.innerHTML="email or password cannot be blank";
+        }
+        else if(u!="jhon@gmail.com" || p!=1234)
+       {
+        msg.innerHTML="ACCESS DENIED ";
+       }
+       else
+      {
+        msg.innerHTML="WELCOME JHON";
+      }
+     }
+        
+
+   </script>
+</head>
+
+<body>
+    <div id="a">
+        <DIV id="msg"></DIV>
+        <input type="text" id="un" class="b" placeholder="Email">
+        <input type="text" id="ps" class="b" placeholder="Password">
+          <DIV>
+        <button onclick="f1()" class="b" id="l" >LOG IN</button>
+          </DIV>
+          
+     </div>
+     <style>
+        #a{
+            
+           background-color: rgb(240, 235, 235); 
+           height: 250px;
+           width: 250px;
+           border-radius: 15px;
+           margin-left: 400px;
+           box-shadow: 2px 2px 2px 2px rgb(61, 57, 57);
+           justify-content: center;
+           text-align: center;
+        }
+        .b{
+            height: 20px;
+            width: 90%;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(52, 143, 229);
+            border-radius: 5px;
+        }
+     </style>
+</body>
+</html>
