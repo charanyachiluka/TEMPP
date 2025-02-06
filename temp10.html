@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function f()
+    {
+    let a1=Number(document.getElementById("a1").value);
+    let a2=Number(document.getElementById("a2").value);
+    let str=`${a1} + ${a2} = ${a1+a2}<br>`;
+    str=str+ `${a1} - ${a2} = ${a1-a2}<br>`;
+    str=str+ `${a1} * ${a2} = ${a1*a2}<br>`;
+    str=str+ `${a1} / ${a2} = ${a1/a2}<br>`;
+    d1.innerHTML=str;
+
+    
+    
+   
+    }
+
+
+</script>
+<body>
+    <div class="container">
+        <input type="number" id="a1">
+        <input type="number" id="a2">
+        <button onclick="f()">SUBMIT</button>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+    </div>
+</body>
+</html>

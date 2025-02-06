@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function f()
+    {
+        let name=document.getElementById("name").value;
+        let age=document.getElementById("age").value;
+        let edu=document.getElementById("edu").value;
+        let place=document.getElementById("place").value;
+        let str=`${name} |`;
+        str=str+`${age} |`;
+         str=str+`${edu} |`;
+          str=str+`${place} `;
+          a.innerHTML=str;
+    }
+</script>
+<body>
+    <input type="text" id="name">
+    <input type="number" id="age">
+    <input type="text" name="" id="edu">
+    <input type="text" name="" id="place">
+    <button onclick="f()">SUBMIT</button>
+    <div id="a"></div>
+</body>
+</html>
